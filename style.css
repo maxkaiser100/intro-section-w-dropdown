@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    
+    
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 12px;
+}
+
+p {
+    margin: 0rem 0rem;
+    padding: 0rem;
+}
+
+.body {
+    display: flex;
+    min-height: 150vh;
+    justify-content: center;
+    transition: 0.3s;
+    background-color: black;
+}
+
+/* Mobile CSS */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    margin: 1rem 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileImage img {
+    width: 100%;
+}
+
+.siteInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.textCopy {
+    font-size: 1.4rem;
+    color: hsla(0, 0%, 41%, 0.808);
+    text-align: center;
+    padding: 0 .8rem;
+    line-height: 1.5;
+}
+
+.learnMore {
+    width: 12rem;
+    height: 4.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 2rem 0;
+    transition: 0.3s;
+}
+
+.learnMore:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.logoSoup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+    
+}
+
+.logoSoup img {
+    width: 20%;
+    height: 20%;
+}
+
+
+/*Navigation*/
+.backOverlay {
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+    right: 0;
+    top: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.521);
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+
+.sideNav {
+  height: 100%;
+  position: fixed; 
+  z-index: 10; 
+  right: 0;
+  top: 0;
+  width: 64%;
+  transform: translateX(100%);
+  background-color: white;
+  overflow-x: hidden; 
+  transition: 0.5s; 
+}
+
+.show-nav {
+    transform: translateX(0);
+}
+
+
+.sideNav .featuresMenu {
+    display: none;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.sideNav .companyMenu {
+    display: none;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.nav-items {
+  position: relative;
+  top: 5%; 
+  width: 100%; 
+  text-align: left; 
+  margin-left: 3rem;
+  margin-top: 30px; 
+}
+
+.sideNav .loginItems {
+    display: none;
+}
+
+.sideNav .item a {
+      padding: .5rem 0;
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: #818181;
+      display: block; 
+      transition: 0.3s; 
+}
+
+.sideNav .item a:hover {
+    color: black;
+}
+
+
+.sideNav .item a img {
+  margin-left: .5rem;
+  padding-bottom: .2rem;
+  transition: .3s;
+}
+
+.sideNav .item .submenu-item {
+  padding-left: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+.sideNav .item .submenu-item span {
+    padding-left: .5rem;
+}
+
+
+.sideNav .close-menu {
+  position: absolute;
+  top: 1rem;
+  right: 10px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .sideNav a {font-size: 20px}
+  .sideNav .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+.desktopImage {
+    display: none;
+    width: 40%;
+    padding: 0 5rem;
+}
+
+.desktopImage img {
+    width: 100%;
+}
+
+.registerButton {
+    width: 8rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    color: gray;
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.registerButton:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+@media only screen and (min-width: 480px) {
+
+.open-menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+.navHeader {
+    width: 10%;
+    position: relative;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    margin-top: 2rem;
+
+}
+.sideNav {
+    position: relative;
+    transform: translateX(0);
+    width: 90%;
+    height: auto;
+    padding-top: 0;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+  }
+
+.sideNav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.sideNav .item {
+    padding: 0 1rem;
+    position: relative;
+}
+
+.sideNav .featuresMenu {
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+    padding: 1rem 2rem 1rem 1rem;
+    box-shadow: 8px 8px 8px gray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.sideNav .companyMenu {
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+    padding: 1rem 2rem 1rem 1rem;
+    box-shadow: 8px 8px 8px gray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.mobileImage {
+    display: none;
+}
+
+.desktopImage {
+    display: block;
+    
+}
+
+.sideNav .loginItems {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card {
+    flex-direction: row;
+
+}
+
+.siteInfo {
+    align-items: flex-start;
+    width: 55%;
+    padding: 0 10rem;
+    justify-content: center;
+}
+
+.title {
+    font-size: 6rem;
+    text-align: left;
+    margin-top: 12rem;
+}
+.textCopy {
+    text-align: left;
+    padding: 0 0;
+    font-size: 1.6rem;
+}
+
+.learnMore {
+    margin: 5rem 0;
+}
+
+.logoSoup {
+    margin: 6rem 0;
+    width: 50vh;
+}
+}
+
+
+
+  

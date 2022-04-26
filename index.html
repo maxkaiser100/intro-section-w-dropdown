@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+
+</head>
+<body>
+<main class="container">
+
+  <!-- Dark mobile background -->
+  <div class="backOverlay" id="backOverlay">    
+  </div>
+
+  <nav>
+    <div class="navHeader" >
+      <img src="images/logo.svg" alt="">
+      <img src="images/icon-menu.svg" alt="" class="open-menu" style="width: 3rem; height: 2rem">
+    </div>
+
+      <div id="mySideNav" class="sideNav">
+        
+        <img src="images/icon-close-menu.svg" class="close-menu"></a>
+      
+       
+        <div class="nav-items">
+
+          <div class="item">
+            <a href="#" id="featuresButton">Features<img class="arrows1" src="images/icon-arrow-down.svg"></a>
+          
+            <div class="featuresMenu" id="featuresMenu">
+              <a href="#" class="submenu-item"><img src="images/icon-todo.svg" alt="icon-todo" > <span>Todo List</span></a>
+              <a href="#" class="submenu-item"><img src="images/icon-calendar.svg" alt="icon-calendar" > <span>Calender</span></a>
+              <a href="#" class="submenu-item"><img src="images/icon-reminders.svg" alt="icon-reminders" > <span>Reminders</span></a>
+              <a href="#" class="submenu-item"><img src="images/icon-planning.svg" alt="icon-planning" > <span>Planning</span></a>
+            </div>
+          </div>
+        
+          <div class="item">
+            <a href="#" id="companyButton">Company
+              <img class="arrows2" src="images/icon-arrow-down.svg" alt="icon-arrow-down" >
+            </a>
+            <div class="companyMenu" id="companyMenu">
+              <a href="#" class="submenu-item company-submenu">History</a>
+              <a href="#" class="submenu-item company-submenu">Our Team</a>
+              <a href="#" class="submenu-item company-submenu">Blog</a>
+            </div>
+          </div>
+
+          <div class="item"><a href="#">Careers</a></div>
+          <div class="item"><a href="#">About</a></div>
+
+        </div>
+
+        <div class="loginItems">
+          <div class="item"><a href="#">Login</a></div>
+          <div class="registerButton">Register</div>
+        </div>
+      
+      </div>
+    </nav>
+
+  <div class="card">
+    
+    <div class="mobileImage">
+      <img src="images/image-hero-mobile.png" alt="">
+    </div>
+
+    <div class="siteInfo">
+       <div class="title">
+        <p>Make <BR> remote work</p>
+      </div>
+
+      <div class="textCopy">
+       <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+       </div>
+
+      <button class="learnMore">
+        <P>Learn More</P>
+      </button>
+
+      <div class="logoSoup">
+        <img src="images/client-databiz.svg" alt="DataBiz">
+        <img src="images/client-audiophile.svg" alt="audiophile">
+       <img src="images/client-meet.svg" alt="meet">
+        <img src="images/client-maker.svg" alt="maker">
+      </div>
+
+    </div>
+
+    <div class="desktopImage">
+      <img src="images/image-hero-desktop.png" alt="">
+    </div>
+
+  </div>
+</main>
+  
+
+ 
+<script src="app.js"></script>
+
+</body>
+</html>
