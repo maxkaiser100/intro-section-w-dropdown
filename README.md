@@ -9,8 +9,8 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/maxkaiser100/intro-section-w-dropdown.git
+- Live Site URL: https://maxkaiser100.github.io/intro-section-w-dropdown/
 
 ## My process
 
